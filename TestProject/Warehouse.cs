@@ -4,11 +4,16 @@ namespace TestProject;
 
 internal class Warehouse
 {
-    public int StockTotal { get; set; } = 1;
-
-    public void BuyCD()
+    public Warehouse(int initialAmount)
     {
-        StockTotal--;
+        StockTotal = initialAmount;
+    }
+
+    public int StockTotal { get; set; }
+
+    public void BuyCD(int amount)
+    {
+        StockTotal = StockTotal - amount;
     }
 
     internal CompactDisc Search(string title, string artist)
