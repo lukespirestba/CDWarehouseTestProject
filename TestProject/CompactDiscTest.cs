@@ -10,6 +10,6 @@ public class CompactDiscTest
         CompactDisc cd = new CompactDisc(1, "Artist", "Title");
         cd.Buy(1);
 
-        Assert.AreEqual(0, cd.QuantityInStock);
+        Assert.That(cd.QuantityInStock, Is.EqualTo(0));
     }
 }
