@@ -7,7 +7,7 @@ public class CompactDiscTest
     [Test]
     public void CDIsBoughtAndStockDecrements()
     {
-        CompactDisc cd = new CompactDisc(1);
+        CompactDisc cd = new CompactDisc(1, "Artist", "Title");
         cd.Buy(1);
 
         Assert.AreEqual(0, cd.QuantityInStock);
