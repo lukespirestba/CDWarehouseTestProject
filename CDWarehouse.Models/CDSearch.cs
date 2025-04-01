@@ -2,9 +2,9 @@
 {
     public class CDSearch
     {
-        public CompactDisc FindCDByArtistAndTitle(string artist, string title)
+        public CompactDiscSearchResult FindCDByArtistAndTitle(string artist, string title)
         {
-            return new CompactDisc(1, artist, title);
+            return new CompactDiscSearchResult(artist, title);
         }
     }
 }
